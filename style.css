@@ -4,11 +4,9 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
 
 body {
     background: #100018;
@@ -17,12 +15,10 @@ body {
     line-height: 1.6;
 }
 
-
 h1, h2, h3 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
 }
-
 
 a {
     color: inherit;
@@ -33,606 +29,218 @@ a {
     width:90%;
     max-width:1400px;
     margin:auto;
-
 }
-
 
 
 /* =====================
 NAVIGATION
 ===================== */
 
-
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index:1000;
 }
-
 
 .navbar {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 30px 7%;
-
-    background: rgba(16,0,24,0.85);
-
-    backdrop-filter: blur(10px);
-
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 7%;
+    background:rgba(16,0,24,.85);
+    backdrop-filter:blur(10px);
 }
-
 
 .logo {
-
-    font-size: 20px;
-    letter-spacing: 3px;
-    font-weight: 500;
-
+    font-size:20px;
+    letter-spacing:3px;
+    font-weight:500;
 }
-
 
 .nav-links {
-
-    display: flex;
-    list-style: none;
-    gap: 35px;
-
+    display:flex;
+    list-style:none;
+    gap:35px;
 }
-
 
 .nav-links a {
-
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: .3s;
-
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    transition:.3s;
 }
-
 
 .nav-links a:hover {
-
     color:#b794f6;
-
 }
-
 
 
 /* =====================
 HERO
 ===================== */
 
-
 .hero {
-
     height:100vh;
-
     display:flex;
     align-items:center;
 
-
     background:
-
     linear-gradient(
         rgba(16,0,24,.55),
         rgba(16,0,24,.9)
     ),
-
     url("images/hero.jpg");
-
 
     background-size:cover;
     background-position:center;
-
 }
 
-
-
 .hero-content {
-
     width:80%;
     max-width:900px;
     margin-left:8%;
-
 }
 
-
-
 .small-title {
-
     letter-spacing:5px;
     font-size:14px;
     color:#c4b5fd;
     margin-bottom:30px;
-
 }
-
-
 
 .hero h1 {
-
     font-size:clamp(50px,7vw,90px);
     line-height:1;
-
     margin-bottom:30px;
-
 }
 
-
-
 .hero-description {
-
     max-width:650px;
     font-size:18px;
     color:#d4d4d4;
-
     margin-bottom:40px;
-
 }
-
-
 
 .hero-buttons {
-
     display:flex;
     gap:20px;
-
 }
-
-
 
 .button,
 .button-outline {
-
     padding:15px 35px;
-
     border:1px solid #a78bfa;
-
     text-transform:uppercase;
-
     letter-spacing:2px;
-
     font-size:13px;
-
     transition:.3s;
-
 }
-
-
 
 .button {
-
     background:#8b5cf6;
-
 }
-
-
 
 .button:hover {
-
     background:#c4b5fd;
     color:#100018;
-
 }
-
-
-
-.button-outline:hover {
-
-    background:#8b5cf6;
-
-}
-
 
 
 /* =====================
 SECTIONS
 ===================== */
 
-
 section {
-
     padding:120px 0;
-
 }
-
-
 
 .section-heading {
-
     margin-bottom:60px;
-
 }
-
-
 
 .section-heading p {
-
     color:#b794f6;
-
     letter-spacing:5px;
-
     font-size:13px;
-
 }
-
-
 
 .section-heading h2 {
-
     font-size:55px;
-
     margin-top:15px;
-
 }
-
 
 
 /* =====================
 ABOUT
 ===================== */
 
-
 .about-grid {
-
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:80px;
-
 }
-
-
 
 .about-grid p {
-
     color:#d0d0d0;
-
     font-size:18px;
-
     margin-bottom:25px;
-
 }
-
-
 
 .stats {
-
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:30px;
-
 }
-
-
 
 .stat {
-
     border-top:1px solid #5b21b6;
-
     padding-top:20px;
-
 }
-
-
 
 .stat h3 {
-
     font-size:50px;
-
     color:#c4b5fd;
-
 }
-
 
 
 /* =====================
-FILMS
+FEATURED FILMS
 ===================== */
 
-
-.film-grid {
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-}
-
-
-
-.film-card {
-
-    background:#1a0028;
-
-    overflow:hidden;
-
-    transition:.4s;
-
-    border:1px solid #2e1065;
-
-}
-
-
-
-.film-card:hover {
-
-    transform:translateY(-10px);
-
-    border-color:#a78bfa;
-
-}
-
-
-
-.film-card img {
-
-    width:100%;
-
-    height:400px;
-
-    object-fit:cover;
-
-}
-
-
-
-.film-info {
-
-    padding:25px;
-
-}
-
-
-
-.film-info h3 {
-
-    font-size:30px;
-
-}
-
-
-
-.film-info p {
-
-    color:#bdbdbd;
-
-}
-
-
-
-/* film button */
-
-
-.film-button {
-
-    text-align:center;
-
-    margin-top:50px;
-
-}
-
-
-
-/* =====================
-PROJECTS
-===================== */
-
-
-.projects-grid {
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-}
-
-
-
-.project-card {
-
-    background:#1a0028;
-
-    padding:40px;
-
-    border:1px solid #2e1065;
-
-    transition:.3s;
-
-}
-
-
-
-.project-card:hover {
-
-    border-color:#a78bfa;
-
-}
-
-
-
-.project-card h3 {
-
-    font-size:30px;
-
-    margin-bottom:20px;
-
-}
-
-
-
-.project-card p {
-
-    color:#cfcfcf;
-
-    margin-bottom:20px;
-
-}
-
-
-
-/* =====================
-CONTACT
-===================== */
-
-
-.contact-grid {
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:40px;
-
-}
-
-
-
-.contact-grid h3 {
-
-    font-size:30px;
-
-}
-
-
-
-.contact-grid a:hover {
-
-    color:#b794f6;
-
-}
-
-
-
-/* =====================
-FOOTER
-===================== */
-
-
-footer {
-
-    padding:60px 0;
-
-    text-align:center;
-
-    background:#08000d;
-
-}
-
-
-
-footer h2 {
-
-    font-size:40px;
-
-}
-
-
-
-.copyright {
-
-    color:#888;
-
-    margin-top:20px;
-
-}
-
-
-
-/* =====================
-MOBILE
-===================== */
-
-
-@media(max-width:900px){
-
-
-.nav-links {
-
-    display:none;
-
-}
-
-
-
-.about-grid,
-.film-grid,
-.projects-grid,
-.contact-grid {
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.hero-content {
-
-    margin-left:5%;
-
-    width:90%;
-
-}
-
-
-
-.section-heading h2 {
-
-    font-size:40px;
-
-}
-
-
-}
-/* =====================
-FEATURED FILMS BUTTONS
-===================== */
-
-.featured-films{
+.featured-films {
     width:100%;
 }
 
-.film-buttons{
+.film-buttons {
     display:flex;
     justify-content:center;
     align-items:flex-start;
-    gap:40px;
+    gap:45px;
     flex-wrap:nowrap;
 }
 
-.film-button{
-    width:300px;
+.film-button {
+    width:380px;
     text-align:center;
-    margin-top:0;
 }
 
-.film-button img{
-    width:300px;
-    height:430px;
+.film-button img {
+    width:380px;
+    height:220px;
     object-fit:cover;
     border-radius:18px;
     transition:.25s;
     box-shadow:0 10px 35px rgba(0,0,0,.5);
 }
 
-.film-button img:hover{
-    transform:scale(1.03);
+.film-button img:hover {
+    transform:scale(1.04);
 }
 
-.awards{
+.awards {
     margin-top:20px;
-    background:#100018;
+    background:#1a0028;
     color:#c4b5fd;
     border:2px solid #b794f6;
     padding:18px;
@@ -640,4 +248,114 @@ FEATURED FILMS BUTTONS
     font-size:18px;
     font-weight:bold;
     line-height:1.5;
+}
+
+
+/* =====================
+PROJECTS
+===================== */
+
+.projects-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.project-card {
+    background:#1a0028;
+    padding:40px;
+    border:1px solid #2e1065;
+    transition:.3s;
+}
+
+.project-card:hover {
+    border-color:#a78bfa;
+}
+
+.project-card h3 {
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.project-card p {
+    color:#cfcfcf;
+    margin-bottom:20px;
+}
+
+
+/* =====================
+CONTACT
+===================== */
+
+.contact-grid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+}
+
+.contact-grid h3 {
+    font-size:30px;
+}
+
+.contact-grid a:hover {
+    color:#b794f6;
+}
+
+
+/* =====================
+FOOTER
+===================== */
+
+footer {
+    padding:60px 0;
+    text-align:center;
+    background:#08000d;
+}
+
+footer h2 {
+    font-size:40px;
+}
+
+.copyright {
+    color:#888;
+    margin-top:20px;
+}
+
+
+/* =====================
+MOBILE
+===================== */
+
+@media(max-width:900px){
+
+.nav-links {
+    display:none;
+}
+
+.about-grid,
+.projects-grid,
+.contact-grid {
+    grid-template-columns:1fr;
+}
+
+.hero-content {
+    margin-left:5%;
+    width:90%;
+}
+
+.section-heading h2 {
+    font-size:40px;
+}
+
+
+.film-buttons {
+    flex-direction:column;
+    align-items:center;
+}
+
+.film-button,
+.film-button img {
+    width:90%;
+}
+
 }
