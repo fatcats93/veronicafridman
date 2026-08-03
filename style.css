@@ -595,3 +595,36 @@ MOBILE
 
 
 }
+.featured-films{
+    text-align:center;
+    margin-top:80px;
+}
+
+.film-buttons{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+    flex-wrap:wrap;
+}
+
+.film-button img{
+    width:350px;
+    border-radius:18px;
+    transition:.25s;
+    box-shadow:0 10px 35px rgba(0,0,0,.5);
+}
+
+.film-button img:hover{
+    transform:scale(1.05);
+}
+
+.awards{
+    margin-top:20px;
+    background:white;
+    color:black;
+    padding:18px;
+    border-radius:12px;
+    font-size:22px;
+    font-weight:bold;
+    line-height:1.5;
+}
