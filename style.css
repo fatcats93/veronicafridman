@@ -29,11 +29,11 @@ a {
     text-decoration: none;
 }
 
-
 .container {
-    width: 85%;
-    max-width: 1200px;
-    margin: auto;
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+
 }
 
 
@@ -595,6 +595,10 @@ MOBILE
 
 
 }
+/* =====================
+FEATURED FILMS BUTTONS
+===================== */
+
 .featured-films{
     width:100%;
 }
@@ -603,18 +607,19 @@ MOBILE
     display:flex;
     justify-content:center;
     align-items:flex-start;
-    gap:50px;
+    gap:40px;
     flex-wrap:nowrap;
 }
 
 .film-button{
-    width:350px;
+    width:300px;
     text-align:center;
+    margin-top:0;
 }
 
 .film-button img{
-    width:350px;
-    height:500px;
+    width:300px;
+    height:430px;
     object-fit:cover;
     border-radius:18px;
     transition:.25s;
@@ -627,12 +632,12 @@ MOBILE
 
 .awards{
     margin-top:20px;
-    background:#1c1c1c;
-    color:#d4af37;
-    border:2px solid #d4af37;
+    background:#100018;
+    color:#c4b5fd;
+    border:2px solid #b794f6;
     padding:18px;
     border-radius:12px;
-    font-size:20px;
+    font-size:18px;
     font-weight:bold;
     line-height:1.5;
 }
