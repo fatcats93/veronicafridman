@@ -596,35 +596,43 @@ MOBILE
 
 }
 .featured-films{
-    text-align:center;
-    margin-top:80px;
+    width:100%;
 }
 
 .film-buttons{
     display:flex;
     justify-content:center;
-    gap:70px;
-    flex-wrap:wrap;
+    align-items:flex-start;
+    gap:50px;
+    flex-wrap:nowrap;
+}
+
+.film-button{
+    width:350px;
+    text-align:center;
 }
 
 .film-button img{
     width:350px;
+    height:500px;
+    object-fit:cover;
     border-radius:18px;
     transition:.25s;
     box-shadow:0 10px 35px rgba(0,0,0,.5);
 }
 
 .film-button img:hover{
-    transform:scale(1.05);
+    transform:scale(1.03);
 }
 
 .awards{
     margin-top:20px;
-    background:white;
-    color:black;
+    background:#1c1c1c;
+    color:#d4af37;
+    border:2px solid #d4af37;
     padding:18px;
     border-radius:12px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
     line-height:1.5;
 }
