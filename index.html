@@ -1,517 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veronica Fridman | Filmmaker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STATIK</title>
 
-    <link rel="stylesheet" href="style.css">
+  <style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    body {
+      margin: 0;
+      background-color: #ff6398;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    .header {
+      width: 100%;
+      background-color: #ff8fb1;
+      padding: 60px 0;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      border-bottom: 7px solid black;
+      position: relative;
+      z-index: 100;
+    }
+
+    .header a {
+      text-decoration: none;
+      font-size: 74px;
+      color: black;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+
+    .title {
+      width: 100%;
+      max-width: 3000px;
+      display: block;
+      margin: 160px auto 0;
+    }
+
+    .content-shift {
+      margin-top: -1250px;
+      position: relative;
+      z-index: 20;
+    }
+
+    .artmag-row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      gap: 70px;
+      margin-top: -160px;
+      margin-bottom: 60px;
+    }
+
+    .side-star {
+      height: 520px;
+      object-fit: contain;
+      margin-top: -180px;
+    }
+
+    .artmag {
+      width: 68%;
+      display: block;
+    }
+
+    .section {
+      background-color: #ffc0cb;
+      margin: 10px auto;
+      width: 99%;
+      max-width: 3200px;
+      border-radius: 55px;
+      padding: 180px;
+    }
+
+    .mission {
+      text-align: center;
+      font-size: 145px;
+      font-family: Arial, sans-serif;
+      padding: 220px 180px;
+    }
+
+    .mission-box {
+      margin-bottom: 160px;
+    }
+
+    .issue-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 70px;
+    }
+
+    .issue-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      transform: translateX(-130px);
+      width: 100%;
+    }
+
+    .issue-left {
+      width: 1500px;
+      height: 1080px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .issue-left img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .issue-right {
+      position: relative;
+      width: 850px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .issue-right img {
+      width: 100%;
+      display: block;
+      border: 8px solid black;
+      border-radius: 20px;
+    }
+
+    .issue-banner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 143, 177, 0.96);
+      padding: 80px;
+      width: 100%;
+      border: 6px solid black;
+      border-radius: 25px;
+      font-size: 68px;
+      font-weight: bold;
+      text-align: center;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ========================= */
+    /* RESPONSIVE FIX (WORKING) */
+    /* ========================= */
+
+    @media screen and (max-width: 1024px) {
+
+      .header {
+        flex-wrap: wrap;
+        padding: 25px 10px;
+        gap: 15px;
+      }
+
+      .header a {
+        font-size: 28px;
+      }
+
+      .title {
+        margin: 60px auto 0;
+        width: 95%;
+      }
+
+      .content-shift {
+        margin-top: 0;
+      }
+
+      .artmag-row {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 20px;
+        align-items: center;
+      }
+
+      .side-star {
+        height: 180px;
+        margin-top: 0;
+      }
+
+      .artmag {
+        width: 90%;
+      }
+
+      .section {
+        padding: 40px 20px;
+        width: 95%;
+      }
+
+      .mission {
+        font-size: 36px;
+        padding: 40px 20px;
+      }
+
+      .issue-inner {
+        flex-direction: column;
+        transform: none;
+        gap: 30px;
+      }
+
+      .issue-left {
+        width: 90%;
+        height: auto;
+      }
+
+      .issue-right {
+        width: 90%;
+      }
+
+      .issue-banner {
+        font-size: 26px;
+        padding: 30px;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
 
-<!-- Navigation -->
+  <div class="header">
+    <a href="index.html">Home</a>
+    <a href="purchase.html">Purchase</a>
+    <a href="submitart.html">Submit Art</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-<header>
+  <img src="hometitle1.jpg" class="title">
 
-<nav class="navbar">
+  <div class="content-shift">
 
-<div class="logo">
-VERONICA FRIDMAN
-</div>
+    <div class="artmag-row">
+      <img src="star2.jpg" class="side-star">
+      <img src="artmag.jpg" class="artmag">
+      <img src="starstar.jpg" class="side-star">
+    </div>
 
-<ul class="nav-links">
+    <div class="section mission mission-box">
+      STATIK is a youth-run magazine featuring artwork from young artists, including organizations supporting children in underserved areas. We curate and design each issue to showcase their artwork. All profits from magazine sales are split and donated back to participating organizations.
+    </div>
 
-<li><a href="#home">Home</a></li>
+    <div class="section issue-section">
 
-<li><a href="#about">About</a></li>
+      <div class="issue-inner">
 
-<li><a href="#films">Films</a></li>
-
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</header>
-
-<!-- Hero -->
-
-<section id="home" class="hero">
-
-<div class="overlay"></div>
-
-<div class="hero-content">
-
-<p class="small-title">
-FILMMAKER • WRITER • STORYTELLER
-</p>
-
-<h1>
-
-Creating stories that stay with people.
-
-</h1>
-
-<p class="hero-description">
-
-Hi, I'm Veronica Fridman, a filmmaker based in New Jersey passionate about directing, screenwriting, animation, journalism, and visual storytelling. Whether I'm behind a camera, illustrating comics, or leading a production crew, I believe every story deserves to be told with honesty, creativity, and purpose.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#films" class="button">
-Watch My Films
-</a>
-
-<a href="resume.pdf" class="button-outline">
-Download Resume
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- About -->
-
-<section id="about">
-
-<div class="container">
-
-<div class="section-heading">
-
-<p>
-ABOUT ME
-</p>
-
-<h2>
-
-A filmmaker first.
-A storyteller always.
-
-</h2>
-
-</div>
-
-<div class="about-grid">
-
-<div>
-
-<p>
-
-My passion for filmmaking began in 2020 when I started creating stories with whatever resources I had available. Since then I've directed narrative films, managed production crews, designed sets, written screenplays, and explored storytelling through animation, comics, journalism, and theatre.
-
-</p>
-
-<p>
-
-I've studied filmmaking through the New York Film Academy and Columbia University's Pre-College Program, where I directed multiple short films while collaborating with talented casts and crews. My goal is to create films that entertain audiences while exploring meaningful ideas about people and the world around them.
-
-</p>
-
-</div>
-
-<div class="stats">
-
-<div class="stat">
-
-<h3>6+</h3>
-
-<p>Years Creating Stories</p>
-
-</div>
-
-<div class="stat">
-
-<h3>5+</h3>
-
-<p>Films Directed</p>
-
-</div>
-
-<div class="stat">
-
-<h3>2</h3>
-
-<p>Prestigious Film Programs</p>
-
-</div>
-
-<div class="stat">
-
-<h3>3</h3>
-
-<p>Creative Mediums</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Featured Films -->
-
-<section id="films">
-
-<div class="container">
-
-<div class="section-heading">
-
-<p>
-FEATURED WORK
-</p>
-
-<h2>
-
-Selected Films
-
-</h2>
-
-</div>
-
-<div class="film-grid">
-
-<div class="film-card">
-
-<img src="images/film1.jpg" alt="Film One">
-
-<div class="film-info">
-
-<h3>Silent Film One</h3>
-
-<p>
-
-Directed during the New York Film Academy Summer Program.
-
-</p>
-
-<a href="#">
-Watch Film →
-
-</a>
-
-</div>
-
-</div>
-
-<div class="film-card">
-
-<img src="images/film2.jpg" alt="Film Two">
-
-<div class="film-info">
-
-<h3>Silent Film Two</h3>
-
-<p>
-
-A visual storytelling exercise exploring emotion without dialogue.
-
-</p>
-
-<a href="#">
-Watch Film →
-
-</a>
-
-</div>
-
-</div>
-
-<div class="film-card">
-
-<img src="images/film3.jpg" alt="Film Three">
-
-<div class="film-info">
-
-<h3>Columbia Short Film</h3>
-
-<p>
-
-Created during Columbia University's Filmmaking Program.
-
-</p>
-
-<a href="#">
-Watch Film →
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- Featured Projects -->
-
-<section id="projects">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <p>BEYOND FILM</p>
-            <h2>Storytelling Across Different Mediums</h2>
+        <div class="issue-left">
+          <img src="soonstar.jpg">
         </div>
 
-        <div class="projects-grid">
+        <div class="issue-right">
 
-            <div class="project-card">
 
-                <h3>🎨 Penelope & Porky</h3>
-
-                <p>
-                    An original comic series that combines humor, expressive artwork,
-                    and imaginative storytelling for younger audiences.
-                </p>
-
-                <a href="https://fatcats93.github.io/index.html" target="_blank">
-                    Read the Comic →
-                </a>
-
-            </div>
-
-            <div class="project-card">
-
-                <h3>📰 STATIK Magazine</h3>
-
-                <p>
-                    Founder of a magazine that showcases artwork from children in
-                    underrepresented communities while supporting nonprofit
-                    organizations.
-                </p>
-
-                <a href="https://fatcats93.github.io/statik/" target="_blank">
-                    Visit STATIK →
-                </a>
-
-            </div>
-
-            <div class="project-card">
-
-                <h3>✍ Journalism</h3>
-
-                <p>
-                    Staff Writer for <strong>The Echo</strong>, writing opinion and
-                    news stories for the Tenafly High School community.
-                </p>
-
-                <a href="https://thetenaflyecho.com/staff_name/veronica-fridman/" target="_blank">
-                    Read Articles →
-                </a>
-
-            </div>
+          <img src="statiktitle.png">
 
         </div>
+
+      </div>
 
     </div>
 
-</section>
-
-
-<!-- Experience -->
-
-<section class="experience">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <p>EXPERIENCE</p>
-            <h2>Creative Journey</h2>
-        </div>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <span>2020 — Present</span>
-
-                <h3>Independent Filmmaker</h3>
-
-                <p>
-                    Writing, directing, editing, and producing narrative films while
-                    experimenting with animation, production design, and visual storytelling.
-                </p>
-
-            </div>
-
-            <div class="timeline-item">
-
-                <span>Summer 2025</span>
-
-                <h3>New York Film Academy</h3>
-
-                <p>
-                    Directed two silent films, managed production crews,
-                    coordinated filming locations, and submitted projects to festivals.
-                </p>
-
-            </div>
-
-            <div class="timeline-item">
-
-                <span>Summer 2026</span>
-
-                <h3>Columbia University</h3>
-
-                <p>
-                    Produced multiple short films while collaborating with
-                    directors, cinematographers, actors, and editors.
-                </p>
-
-            </div>
-
-            <div class="timeline-item">
-
-                <span>2025 — Present</span>
-
-                <h3>Staff Writer • The Echo</h3>
-
-                <p>
-                    Reporting on school events and writing opinion pieces while
-                    strengthening journalistic storytelling.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Quote Banner -->
-
-<section class="quote">
-
-    <div class="container">
-
-        <blockquote>
-
-            "Every project begins with one simple question:
-            <br><br>
-            <em>What story deserves to be told?</em>"
-
-        </blockquote>
-
-    </div>
-
-</section>
-
-
-<!-- Contact -->
-
-<section id="contact">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p>CONTACT</p>
-
-            <h2>Let's Create Something Meaningful</h2>
-
-        </div>
-
-        <div class="contact-grid">
-
-            <div>
-
-                <h3>Email</h3>
-
-                <p>
-                    <a href="mailto:veronicafridman63@gmail.com">
-                        veronicafridman63@gmail.com
-                    </a>
-                </p>
-
-            </div>
-
-            <div>
-
-                <h3>Film Portfolio</h3>
-
-                <p>
-
-                    <a href="https://fatcats93.github.io/veronicafilm/" target="_blank">
-
-                        View Portfolio
-
-                    </a>
-
-                </p>
-
-            </div>
-
-            <div>
-
-                <h3>GitHub</h3>
-
-                <p>
-
-                    <a href="https://github.com/fatcats93" target="_blank">
-
-                        github.com/fatcats93
-
-                    </a>
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Footer -->
-
-<footer>
-
-    <div class="container">
-
-        <h2>Veronica Fridman</h2>
-
-        <p>
-
-            Filmmaker • Writer • Director • Storyteller
-
-        </p>
-
-        <p class="copyright">
-
-            © 2026 Veronica Fridman.
-            Designed and coded by Veronica.
-
-        </p>
-
-    </div>
-
-</footer>
-
-
-<script src="script.js"></script>
+  </div>
 
 </body>
-
 </html>
