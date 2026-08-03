@@ -220,18 +220,16 @@ FEATURED FILMS
     flex-wrap:nowrap;
 }
 
-.film-button {
-    width:380px;
-    text-align:center;
+.film-button{
+    flex:1;
+    max-width:420px;
 }
 
-.film-button img {
-    width:380px;
-    height:220px;
-    object-fit:cover;
+.film-button img{
+    width:100%;
+    height:auto;
+    display:block;
     border-radius:18px;
-    transition:.25s;
-    box-shadow:0 10px 35px rgba(0,0,0,.5);
 }
 
 .film-button img:hover {
