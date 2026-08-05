@@ -247,6 +247,24 @@ FEATURED FILMS
     font-weight:bold;
     line-height:1.5;
 }
+.film-more {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.film-more .button {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #8b5cf6;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.film-more .button:hover {
+    background: #a78bfa;
+    transform: translateY(-2px);
+}
 
 
 /* =====================
